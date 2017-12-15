@@ -14,5 +14,8 @@ span {
     margin: 1em;
     height: 3em;
     font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    position: relative;
 }
 

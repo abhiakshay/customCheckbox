@@ -5,7 +5,6 @@
     position: relative;
     width: 4em;
     height: 2em;
-    z-index: 30;
     pointer-events: all;
     -webkit-transition: opacity 350ms ease;
     -moz-transition: opacity 350ms ease;
