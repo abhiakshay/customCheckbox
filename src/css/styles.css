@@ -9,8 +9,11 @@ div {
     padding: 1em;
 }
 
-label {
+span {
     margin: 1em;
+    height: 3em;
+    font-size: 1rem;
+    line-height: 2;
 }
 
 
@@ -20,21 +23,20 @@ label {
     opacity: 1;
 }
 
-#box1:checked ~ #label_box1:before{
-    right: 1px;
-}
-#box1:checked ~ #label_box1:after{
-    content: " " attr(onTxt) "";
-}
 
 #box2:checked ~ #label_box2{
     opacity: 1;
 }
 
-#box2:checked ~ #label_box2:before{
-    right: 1px;
+
+
+
+#box3:checked ~ #label_box3{
+    opacity: 1;
 }
 
-#box2:checked ~ #label_box2:after{
-    content: " " attr(onTxt) "";
+
+
+#box4:checked ~ #label_box4{
+    opacity: 1;
 }
