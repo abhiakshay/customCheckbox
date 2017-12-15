@@ -24,7 +24,7 @@ label {
     right: 1px;
 }
 #box1:checked ~ #label_box1:after{
-    content: 'ON';
+    content: " " attr(onTxt) "";
 }
 
 #box2:checked ~ #label_box2{
@@ -36,5 +36,5 @@ label {
 }
 
 #box2:checked ~ #label_box2:after{
-    content: 'ON';
+    content: " " attr(onTxt) "";
 }
