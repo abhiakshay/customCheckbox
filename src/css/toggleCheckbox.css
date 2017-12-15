@@ -1,0 +1,55 @@
+.label-checkbox_toggle {
+    background: #ffaaaa;
+    opacity: 0.5;
+    display: inline-block;
+    position: relative;
+    width: 4em;
+    height: 2em;
+    z-index: 30;
+    pointer-events: all;
+    -webkit-transition: opacity 350ms ease;
+    -moz-transition: opacity 350ms ease;
+    -ms-transition: opacity 350ms ease;
+    -o-transition: opacity 350ms ease;
+    transition: opacity 350ms ease;
+}
+
+.label-checkbox_toggle:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+
+    background: #C21F39;
+    right: 2em;
+    -webkit-transition: right 350ms ease;
+    -moz-transition: right 350ms ease;
+    -ms-transition: right 350ms ease;
+    -o-transition: right 350ms ease;
+    transition: right 350ms ease;
+}
+
+.label-checkbox_toggle:after {
+    content: 'OFF';
+    font-size: 1.5rem;
+    color: #000000;
+    position: absolute;
+    right: -3em;
+    line-height: 1.5;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.label-checkbox_toggle.circle {
+    border-radius: 1em;
+}
+
+.label-checkbox_toggle.circle:before{
+    border-radius: 50%;
+}
+
+

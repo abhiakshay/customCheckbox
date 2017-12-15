@@ -1,0 +1,20 @@
+{
+  "name": "customCheckbox",
+  "version": "0.0.1",
+  "author": {
+    "name": "Akshay Pathare"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhiakshay/customCheckbox.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sync": "^0.1.4",
+    "gulp-util": "^3.0.6"
+  }
+}
