@@ -11,7 +11,15 @@ Customize checkbox and radio buttons to create toggle buttons or tabs
 Attribute onTxt : you can specify the text that needs to be displayed when toggle is on
 Attribute offTxt : you can specify the text that needs to be displayed when toggle is off
 
-for="box1" : This tells label "label_box1" to react to the check events of checkbox with id "box1"
+Attribute for="box1" : This tells label "label_box1" to react to the check events of checkbox with id "box1"
 
 additional class "center" can be added on label for the circular toggle button.
 additional class "line" can be added on label for the linear toggle button.
+
+#### Make sure you add a container id while accessing checkbox and setting its display property to "none"
+#### This is to avoid making it generic  in this project, the container for toggle buttons is toggleCheckboxContainer
+#### So the css becomes #toggleCheckboxContainer input[type="checkbox"] { display: none; }
+
+### The toggle button is scalable and the scaling is depend upon the font-size that was set on the parent container as it inherits it
+### if we have to show the text next to toggle button, the line height property needs to be set on container to make sure the text is middle align to toggle button
+                        }

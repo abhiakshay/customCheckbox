@@ -1,4 +1,4 @@
-input[type="checkbox"] {
+#toggleCheckboxContainer input[type="checkbox"] {
     display: none;
 }
 
@@ -16,27 +16,3 @@ span {
     line-height: 2;
 }
 
-
-/*toggle checkbox */
-
-#box1:checked ~ #label_box1{
-    opacity: 1;
-}
-
-
-#box2:checked ~ #label_box2{
-    opacity: 1;
-}
-
-
-
-
-#box3:checked ~ #label_box3{
-    opacity: 1;
-}
-
-
-
-#box4:checked ~ #label_box4{
-    opacity: 1;
-}
