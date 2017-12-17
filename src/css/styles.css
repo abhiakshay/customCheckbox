@@ -1,21 +1,48 @@
+body {
+    position: relative;
+}
+#customCheckboxContainer input[type="checkbox"],
 #toggleCheckboxContainer input[type="checkbox"] {
     display: none;
 }
 
 div {
-    border: 3px solid #C21F39;
+    background: blanchedalmond;
+    border: 0.5em solid bisque;
     display: grid;
     width: 90vw;
-    padding: 1em;
-    margin: 1em;
+    padding: 3em 1em 1em 1em;
+    margin-bottom: 2vh;
+    border-radius: 1em;
+    font-size: 2vw;
+    font-family: Arial sans-serif;
 }
+
+div:before {
+    content: " " attr(header) "";
+    border-top-left-radius: 0.5em;
+    background: bisque;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3;
+    position: absolute;
+    width: 15em;
+    height: 3em;
+}
+
+
 
 span {
     margin: 1em;
     height: 3em;
-    font-size: 1rem;
     display: inline-block;
     width: 100%;
     position: relative;
 }
 
+@media screen and (orientation: landscape){
+    div {
+        font-size: 2.2vh;
+        margin-bottom: 1vw;
+    }
+}
