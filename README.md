@@ -3,9 +3,6 @@ Customize checkbox without using images and javascript and also do cool stuff wi
 
 ## Toggle button:
 
-"<input id="box1" type="checkbox">"
-"<label id="label_box1" onTxt="ON" offTxt="OFF" for="box1" class="label-checkbox_toggle"></label>"
-
 you can change any other property on label when checkbox is checked.
 
 #### Attribute onTxt : you can specify the text that needs to be displayed when toggle is on
@@ -27,8 +24,5 @@ additional class "line" can be added on label for the linear toggle button.
 ## custom form checkbox:
 
 It has 4 different themes from theme0 to theme3. Add the theme class of your choice for the checkbox to take effect
-
-"<input id="check1" type="checkbox">"
-"<label id="label_check1"  for="check1" class="label-checkbox_custom theme0"></label>"
 
 #### You can change the colors of the checkbox as per your needs
