@@ -9,8 +9,9 @@ body {
 div {
     background: blanchedalmond;
     border: 0.5em solid bisque;
-    display: grid;
+    display: inline-flex;
     width: 90vw;
+    position: relative;
     padding: 3em 1em 1em 1em;
     margin-bottom: 2vh;
     border-radius: 1em;
@@ -28,6 +29,8 @@ div:before {
     position: absolute;
     width: 15em;
     height: 3em;
+    left: 0;
+    top:0
 }
 
 
