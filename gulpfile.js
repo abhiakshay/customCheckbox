@@ -15,7 +15,7 @@ gulp.task('css',function () {
     return gulp.src('src/css/*.css')
         .pipe(plumber())
         .pipe(concat('customCheckbox.css'))
-        .pipe(gulp.dest('build/css'));
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('css-min',function () {
@@ -23,11 +23,11 @@ gulp.task('css-min',function () {
         .pipe(cssmin())
         .pipe(concat('customCheckbox.css'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('build/css'));
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('html', function () {
-    gulp.src('./src/html/*.html')
+    gulp.src('./src/*.html')
         .pipe(connect.reload());
 });
 
@@ -42,14 +42,14 @@ gulp.task('connect', function() {
 
 gulp.task('open', function(){
     var options = {
-        uri: 'http://localhost:3002/src/html/',
+        uri: 'http://localhost:3002/src/',
         app: 'chrome'
     };
-    gulp.src('./src/html/index.html')
+    gulp.src('./src/index.html')
         .pipe(open(options));
 });
 gulp.task('watch', function () {
-    gulp.watch(['css'], ['css-min'],['./app/*.html'], ['html']);
+    gulp.watch(['css'], ['css-min'],['./src/*.html'], ['html']);
 });
 
 gulp.task('default',gulpsync.sync(['css','css-min','connect','open','watch']));

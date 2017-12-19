@@ -199,7 +199,7 @@ input[type="checkbox"]:checked ~ .label-checkbox_toggle:before {
     content: " " attr(offTxt) "";
     color: #000000;
     position: absolute;
-    right: -13vw;
+    right: -8vw;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);

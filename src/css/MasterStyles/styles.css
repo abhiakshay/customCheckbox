@@ -1,25 +1,39 @@
 body {
     position: relative;
 }
+#menuButton,
 #customCheckboxContainer input[type="checkbox"],
 #toggleCheckboxContainer input[type="checkbox"] {
     display: none;
 }
 
-div {
+.content {
+    display: inline-block;
+    position: absolute;
+    width: 90vw;
+    left:0;
+    top: 6vw;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.container {
     background: blanchedalmond;
     border: 0.5em solid bisque;
-    display: inline-flex;
-    width: 90vw;
+    display: inline-block;
+    width: 100%;
     position: relative;
     padding: 3em 1em 1em 1em;
     margin-bottom: 2vh;
     border-radius: 1em;
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-family: Arial sans-serif;
 }
 
-div:before {
+.container:before {
     content: " " attr(header) "";
     border-top-left-radius: 0.5em;
     background: bisque;
@@ -35,17 +49,91 @@ div:before {
 
 
 
+
+
 span {
     margin: 1em;
     height: 3em;
     display: inline-block;
-    width: 100%;
+    width: 38%;
     position: relative;
 }
 
+span:first-child {
+    float: left;
+}
 @media screen and (orientation: landscape){
     div {
         font-size: 2.2vh;
         margin-bottom: 1vw;
     }
 }
+
+/*menu example that illustrates how checkbox can control multiple elements*/
+.label-checkbox_button {
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    background: #0074D9;
+    position: relative;
+}
+
+.label-checkbox_button:before {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 40%;
+    border-top: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -moz-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    -o-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.menu-container {
+    display: inline-block;
+    position: absolute;
+    background: #000000;
+    opacity: 0.7;
+    width: 38vw;
+    height: 100vh;
+    left: -40vw;
+}
+.menu-container,
+.label-checkbox_button {
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+input[type="checkbox"]:checked + .label-checkbox_button {
+    background: #66d9ef;
+    margin-left: 40%
+}
+
+input[type="checkbox"]:checked + .label-checkbox_button:before {
+    background: #66d9ef;
+    left: 25%;
+    -webkit-transform: translateY(-50%) rotate(225deg);
+    -moz-transform: translateY(-50%) rotate(225deg);
+    -ms-transform: translateY(-50%) rotate(225deg);
+    -o-transform: translateY(-50%) rotate(225deg);
+    transform: translateY(-50%) rotate(225deg);
+}
+
+
+input[type="checkbox"]:checked ~ .menu-container {
+    left: 0;
+}
+
+input[type="checkbox"]:checked ~ .content {
+    left: 40%
+}
+
