@@ -11,6 +11,7 @@
     -ms-transition: all 350ms ease;
     -o-transition: all 350ms ease;
     transition: all 350ms ease;
+
 }
 
 .label-checkbox_custom:before{
@@ -154,54 +155,6 @@ input[type="checkbox"]:checked ~ .label-checkbox_custom.theme2:before {
 
 input[type="checkbox"]:checked ~ .label-checkbox_custom.theme3:before {
     opacity: 1;
-}
-body {
-    position: relative;
-}
-#customCheckboxContainer input[type="checkbox"],
-#toggleCheckboxContainer input[type="checkbox"] {
-    display: none;
-}
-
-div {
-    background: blanchedalmond;
-    border: 0.5em solid bisque;
-    display: grid;
-    width: 90vw;
-    padding: 3em 1em 1em 1em;
-    margin-bottom: 2vh;
-    border-radius: 1em;
-    font-size: 2vw;
-    font-family: Arial sans-serif;
-}
-
-div:before {
-    content: " " attr(header) "";
-    border-top-left-radius: 0.5em;
-    background: bisque;
-    font-weight: bold;
-    text-align: center;
-    line-height: 3;
-    position: absolute;
-    width: 15em;
-    height: 3em;
-}
-
-
-
-span {
-    margin: 1em;
-    height: 3em;
-    display: inline-block;
-    width: 100%;
-    position: relative;
-}
-
-@media screen and (orientation: landscape){
-    div {
-        font-size: 2.2vh;
-        margin-bottom: 1vw;
-    }
 }
 .label-checkbox_toggle {
     background: #ffaaaa;
