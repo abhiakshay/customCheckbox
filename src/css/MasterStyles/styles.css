@@ -2,6 +2,7 @@ body {
     position: relative;
 }
 #menuButton,
+#customCheckboxContainer1 input[type="checkbox"],
 #customCheckboxContainer input[type="checkbox"],
 #toggleCheckboxContainer input[type="checkbox"] {
     display: none;
